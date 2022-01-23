@@ -31,6 +31,8 @@ function operate(a,b,c) {
     if (b == "-") {return subtract(a,c)}
     if (b == "/") {
         if (c == "0") {
+            console.log("Hit Zero")
+            displayUpdate("not maths")
             return "not maths";
         } 
         else {return divide(a,c)}
@@ -46,6 +48,10 @@ function resetCursor() {
 
 // rounder - return back the digits display can accomodate based on digits left of decimal
 function rounder(num) {
+    if (num.toString().includes('not maths')) {
+        display.textContent = "Not Maths"
+        return;
+    }
     if (Number.isInteger(num)) {
         return num
         setBase(1)
@@ -88,10 +94,6 @@ function displayUpdate(content) {
     } 
     if (content.toString().includes('e+')) {
         display.textContent = "upgrade req"
-        return;
-    }
-    if (content.toString().includes('not maths')) {
-        display.textContent = "not maths"
         return;
     }
     if (cursorPosition >= digitDisplay ) {
@@ -247,7 +249,6 @@ function toggleNotification () {
     returnWin(gr); 
  */
  function eventKey(e) {
-     console.log(e)
      if (e.key.match(numsReg)) {
         processBtn(e.key)
         return;
