@@ -15,9 +15,9 @@
   <meta property="og:description" content="A simple HTML Calculator for TOP projects.">
   <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="/favicon.ico">
+<!--   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -30,10 +30,10 @@
             <div class="inner-text">UTAH CONTRAPTION</div>
             <div class="model-number">UC-z80 PV</div>
           </div>
-          <div class=screen-frame>
-            <div class=display>0.</div>
-            <div class=screen-divider></div>
-            <div class=pv-cells>
+          <div class="screen-frame">
+            <div class="display"><div class="display-text">0</div><div class="base">.</div></div>
+            <div class="screen-divider"></div>
+            <div class="pv-cells">
               <span class="cell-one"></span>
               <span class="cell-two"></span>
               <span class="cell-three"></span>
@@ -42,58 +42,61 @@
           </div>
           <div class="keypad">
           <div class="buttons">
-          <div class="small-button"><div class="button-text-1" data-key="z">1/𝑥</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">𝑥2</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">√</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">CE/C</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">1/𝑥</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">𝑥2</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">√</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">CE/C</div></div>
           <div class='small-button'><div class="button-text-2" data-key="8">AC</div></div>
 
-          <div class="small-button"><div class="button-text-1" data-key="z">INV</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">sin</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">cos</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">tan</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">DRG</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">INV</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">sin</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">cos</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">tan</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">DRG</div></div>
 
-          <div class="small-button"><div class="button-text-1" data-key="z">K</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">EE</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">log</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">Inx</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">yˣ</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">K</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">EE</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">log</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">Inx</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">yˣ</div></div>
 
-          <div class="small-button"><div class="button-text-1" data-key="z">𝝅</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">%</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">(</div></div>
-          <div class="small-button"><div class="button-text-1" data-key="z">)</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">&pi;</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">%</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">(</div></div>
+          <div class="small-button"><div class="button-text-1" data-key="90">)</div></div>
           <div class="large-button"><div class="button-text-3" data-key="111">÷</div></div>
 
-          <div class="large-button"><div class="button-text-1" data-key="z">STO</div></div>
+          <div class="large-button"><div class="button-text-1" data-key="90">STO</div></div>
           <div class="large-button"><div class="button-text-4" data-key="103">7</div></div>
           <div class="large-button"><div class="button-text-4" data-key="104">8</div></div>
           <div class="large-button"><div class="button-text-4" data-key="105">9</div></div>
           <div class="large-button"><div class="button-text-3" data-key="106">x</div></div>
 
-          <div class="large-button"><div class="button-text-1" data-key="z">RCL</div></div>
+          <div class="large-button"><div class="button-text-1" data-key="90">RCL</div></div>
           <div class="large-button"><div class="button-text-4" data-key="100">4</div></div>
           <div class="large-button"><div class="button-text-4" data-key="101">5</div></div>
           <div class="large-button"><div class="button-text-4" data-key="102">6</div></div>
           <div class="large-button"><div class="button-text-3" data-key="109">—</div></div>
 
-          <div class="large-button"><div class="button-text-1" data-key="z">SUM</div></div>
+          <div class="large-button"><div class="button-text-1" data-key="90">SUM</div></div>
           <div class="large-button"><div class="button-text-4" data-key="97">1</div></div>
           <div class="large-button"><div class="button-text-4" data-key="98">2</div></div>
           <div class="large-button"><div class="button-text-4" data-key="99">3</div></div>
           <div class="large-button"><div class="button-text-3" data-key="107">+</div></div>
 
-          <div class="large-button"><div class="button-text-1" data-key="z">EXC</div></div>
+          <div class="large-button"><div class="button-text-1" data-key="90">EXC</div></div>
           <div class="large-button"><div class="button-text-4" data-key="96">0</div></div>
-          <div class="large-button"><div class="button-text-4" data-key="z">•</div></div>
-          <div class="large-button"><div class="button-text-4" data-key="z">+/_</div></div>
+          <div class="large-button"><div class="button-text-4" data-key="90">•</div></div>
+          <div class="large-button"><div class="button-text-4" data-key="90">+/_</div></div>
           <div class="large-button"><div class="button-text-3" data-key="13">=</div></div>
           </div>
           </div>
-          <div class="bottom-text">LITE POWERED</div>
+          <div class="bottom"> 
+          <div class="logo"></div><div class="notificationBarBottom">Extended functions available on the z81.</div><div class="bottom-text">LITE POWERED</div>
+        </div>
       </div>
   </div>
+  
   <script src="js/scripts.js"></script>
 </body>
 </html>
