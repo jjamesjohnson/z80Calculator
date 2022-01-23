@@ -1,6 +1,6 @@
 @font-face{
   font-family:'digital-clock-font';
-  src: url('/fonts/digital_counter_7.ttf');
+  src: url('https://jjamesjohnson.github.io/z80Calculator/fonts/digital_counter_7.ttf');
  }
 
 .wrapper {
